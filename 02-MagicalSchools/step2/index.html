@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Magical Schools</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  </head>
+  <body>
+    <h1>Magical Schools</h1>
+    <script>
+      $.get("/api/schools").then(data => {
+        console.log(data);
+        const ul = $("<ul>");
+        for (let i = 0; i < data.length; i++) {
+          const li = $("<li>");
+          li.append($("<p>").text("ID: " + data[i].id));
+          li.append($("<p>").text("School: " + data[i].name));
+          ul.append(li);
+        }
+        $("body").append(ul);
+      });
+    </script>
+  </body>
+</html>
