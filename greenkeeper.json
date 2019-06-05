@@ -1,0 +1,18 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "01-ExpressCalculator/Solved/package.json",
+        "01-ExpressCalculator/Unsolved/package.json",
+        "02-MagicalSchools/step1/package.json",
+        "02-MagicalSchools/step2/package.json",
+        "02-MagicalSchools/step3/package.json",
+        "03-SeinfeldApp/Solved/package.json",
+        "04-HandlebarsLunch/package.json",
+        "05-BenAndJerrys/Solved/package.json",
+        "06-HandlebarsAnimals/Solved/package.json",
+        "06-HandlebarsAnimals/Unsolved/package.json"
+      ]
+    }
+  }
+}
